@@ -289,14 +289,14 @@ h3 a:hover {
   }
 
 /*navigation edits*/
- .navbar{
+ .navbar {
         display:flex;
         flex-direction:column;
         gap:15px;
         align-items: center;
         text-align:center;
         font-size: 24px;
-        margin-left: 5%;
+        margin-left: 2%;
     }
   .navbar a {
     font-size: 28px;
@@ -304,6 +304,10 @@ h3 a:hover {
   }
   #navbar{
     margin-left: 2%;
+    margin-right: 2%;
+  }
+  #navdissappear{
+    position: fixed;
   }
  .homepage a{
         font-size: 44px;
@@ -350,7 +354,7 @@ header {
   }
   
  .inlinelabel {
-  margin-left: 2%;
+  margin-left: 5%;
   }
  
  
@@ -359,11 +363,11 @@ header {
         flex-direction:column;
         gap:30px;
         padding:60px, 20px;
+        font-size: 40;
     }
   .galleries a {
-    font-size: 32 ;
-  }
-  
+    font-size: 40 ;
+    }
 .galleries:nth-child(even) {
         flex-direction: column;
     }
