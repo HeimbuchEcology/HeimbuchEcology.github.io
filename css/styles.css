@@ -1,5 +1,9 @@
 /* Id's have a # before them and classes have a . before them. */
 
+html,
+body{
+  overflow-x:hidden;
+}
 
 
 body{
@@ -279,14 +283,24 @@ h3 a:hover {
 
 /*!!!!!!!!!!!!!!!!!!!!mobile friendly stuff!!!!!!!!!!!!!!!!!!!!*/
 @media (max-width: 768px) {
+  
+  body {
+    padding-top: 120px;
+  }
 
 /*navigation edits*/
  .navbar{
+        display:flex;
         flex-direction:column;
         gap:15px;
+        align-items: center;
         text-align:center;
         font-size: 24px;
     }
+  .navbar a {
+    font-size: 28px;
+    margin: 0;
+  }
   #navbar{
     margin-left: 2%;
   }
@@ -360,7 +374,11 @@ header {
         grid-template-columns:repeat(2,1fr);
     }
  
- 
+ img{
+   max-width: 100%;
+   height: auto;
+   display: block;
+ }
  
  
  
