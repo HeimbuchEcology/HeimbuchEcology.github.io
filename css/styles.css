@@ -296,6 +296,7 @@ h3 a:hover {
         align-items: center;
         text-align:center;
         font-size: 24px;
+        margin-left: 5%;
     }
   .navbar a {
     font-size: 28px;
@@ -360,6 +361,9 @@ header {
         padding:60px, 20px;
         font-size: 45px;
     }
+  .galleries a {
+    font-size: 20;
+  }
   
 .galleries:nth-child(even) {
         flex-direction: column;
