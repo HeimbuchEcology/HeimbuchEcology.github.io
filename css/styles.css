@@ -296,22 +296,26 @@ h3 a:hover {
         align-items: center;
         text-align:center;
         font-size: 24px;
-        margin-left: 2%;
+        margin-left: 0%;
+        
     }
   .navbar a {
     font-size: 28px;
     margin: 0;
   }
   #navbar{
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding: 4%;
   }
   #navdissappear{
     position: fixed;
+    padding: 4%;
   }
  .homepage a{
         font-size: 44px;
         margin-left: 0;
+        line-height: 60px;
  }
 
 header {
