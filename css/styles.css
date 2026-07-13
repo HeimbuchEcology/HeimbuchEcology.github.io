@@ -6,6 +6,42 @@ body{
 }
 
 
+/*body {
+    opacity: 0;
+    transition: opacity 0.35s ease;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+body.fade-out {
+    opacity: 0;
+}*/
+
+
+/*cursor*/
+html,
+body,
+*,
+*::before,
+*::after {
+    cursor: none !important;
+}
+
+#cursor {
+    position: fixed;
+    width: 120px;
+    height: 120px;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-8%, -34%);
+    
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+
 body{
   background-color: #1a1711;/* #38312d */
   margin:0;
@@ -279,6 +315,24 @@ h3 a:hover {
   float: right;
   margin-top: 3%;
 }
+
+.spikecontainer{
+   width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    -webkit-mask-image:url("assets/spiked-container.svg");
+    -webkit-mask-repeat:no-repeat;
+    -webkit-mask-position:center;
+    -webkit-mask-size:contain;
+
+    mask-image:url("assets/spiked-container.svg");
+    mask-repeat:no-repeat;
+    mask-position:center;
+    mask-size:contain;
+}
+
 
 /*inline images*/
 

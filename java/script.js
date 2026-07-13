@@ -1,3 +1,6 @@
+
+
+////////////////////////image galleries/////////////////////////
 const images = document.querySelectorAll(".gallery-grid img");
 
 images.forEach(img => {
@@ -32,3 +35,56 @@ images.forEach(img => {
     });
 
 });
+
+/*
+const cursor = document.getElementById("cursor");
+
+document.addEventListener("mousemove", (e) => {
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+});
+
+document.addEventListener("mousedown", () => {
+    cursor.src = "assets/click.png";
+});
+
+document.addEventListener("mouseup", () => {
+    cursor.src = "assets/unclick.png";
+});
+*/
+/////////////////////cursor stuff/////////////////////////////////////
+const cursor = document.getElementById("cursor");
+
+// Hide initially
+cursor.style.opacity = "0";
+
+document.addEventListener("mousemove", (e) => {
+    cursor.style.left = `${e.clientX}px`;
+    cursor.style.top = `${e.clientY}px`;
+
+    // Show the cursor after the first movement
+    cursor.style.opacity = "1";
+});
+
+document.addEventListener("mousedown", () => {
+    cursor.src = "assets/click.png";
+});
+
+document.addEventListener("mouseup", () => {
+    cursor.src = "assets/unclick.png";
+});
+
+// Optional: hide when leaving the browser window
+document.addEventListener("mouseleave", () => {
+    cursor.style.opacity = "0";
+});
+
+// Show again when re-entering
+document.addEventListener("mouseenter", () => {
+    cursor.style.opacity = "1";
+});
+
+
+//////////////////making the page fade in and out /////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////
