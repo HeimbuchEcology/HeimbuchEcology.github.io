@@ -355,8 +355,13 @@ h3 a:hover {
   
   body {
     padding-top: 120px;
-    cursor:none;
   }
+  
+  @media (hover: none), (pointer: coarse) {
+    #cursor {
+        display: none;
+    }
+}
 
 /*navigation edits*/
  .navbar {
