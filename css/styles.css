@@ -355,6 +355,7 @@ h3 a:hover {
   
   body {
     padding-top: 120px;
+    cursor:none;
   }
 
 /*navigation edits*/
